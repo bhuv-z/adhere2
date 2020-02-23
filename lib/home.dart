@@ -5,83 +5,80 @@ import 'main.dart';
 import 'package:charts_flutter/flutter.dart';
 import 'dart:collection';
 import 'dart:developer';
-import 'package:firebase_analytics/firebase_analytics.dart';
-import 'package:firebase_analytics/observer.dart';
-// import 'package:firebase_database/firebase_database.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
+//import 'package:firebase_analytics/firebase_analytics.dart';
+//import 'package:firebase_analytics/observer.dart';
+//import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
-
-
+// import 'package:firebase/firebase.dart';
+//import 'package:postgresql2/postgresql.dart';
 // void main() {
 //  runApp(HomeScreen());
 // }
 
 //private variables
+// List<String> prescriptions = new List();
+// String pid;
 
-List<String> prescriptions = new List();
+// class Card_{
+//   final String Col_name;
+//   final String Sci_name;
+//   final int mg;
+//   final String  interval;
+//   final bool taken = false;
 
-/* PIE CHART
-class PieOutsideLabelChart extends StatelessWidget {
-  final List<Series> seriesList;
-  final bool animate;
+//   Card_({this.Sci_name, this.Col_name, this.mg, this.interval});
+// }
 
-  PieOutsideLabelChart(this.seriesList, {this.animate});
+// List<Card_> medi_Cards_ = new List();
 
-  factory PieOutsideLabelChart.withSampleData() {
-    return new PieOutsideLabelChart(
-      _inputData(),
-      animate: false,
-    );
-  }
+// class CardManager{
+//   void populate_cards(List<Card> cards){
+//     for (var i = 0; i < cards.length; i++){
+      
+//     }
+//   }
+// }
 
-  @override
-  Widget build (BuildContext ctxt) {
-    return new PieChart(seriesList,
-      animate: animate,
-      defaultRenderer: new ArcRendererConfig(
-        ArcRendererDecorators: [
-          new ArcLabelDecorator(
-            labelPosition: ArcLabelPosition.outside
-          )
-        ]
-      )
-    );
-  }
-
-  static List<Series<something, something>> _inputData() {
-    final data = [
-      //obtain data
-    ];
-    return [
-      new Series<something, something>(
-        id:
-        domainFn: ,
-        measureFn: ,
-        data: data,
-        labelAccessorFn: (something, _) => '${}: ${}',
-      )
-    ];
-  }
-}
-
-//Data Struct
-class PrescriptionChart {
-  final int year;
-  final int sales;
-
-  LinearSales(this.year, this.sales);
-}
-
-*/
+// class DB{
+//  @override
+//  Widget build(BuildContext context) {
+//    return new StreamBuilder<QuerySnapshot>(
+//      stream: Firestore.instance.collection("patients").snapshots(),
+//      builder: (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot){
+//        if (!snapshot.hasData){
+//          print('no');
+//          return Container();
+//        }
+//         else{
+//           print(
+//             get_patient_medicine_collection(snapshot));
+//           return Container();
+//         }
+//
+//      },
+//    );
+//  }
+//AsyncSnapshot<QuerySnapshot> snapshot
+//   get_patient_medicine_collection(){
+//
+////      return snapshot.data.documents
+////        .map((doc) => doc[pid]).toList();
+//    final CollectionReference pt_col = Firestore.instance.collection("patients");
+//    print(pt_col.getDocuments());
+//   }
+//
+//  //  void CollectPatients(DocumentSnapshot pat){
+//  //    print(pat);
+//  //  }
+// }
 
 class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext ctxt) {
+    //DB().get_patient_medicine_collection();
     return new MaterialApp(
       home: new Home(),);
   }
-
-
 }
 
 class Home extends StatelessWidget {
@@ -185,11 +182,11 @@ class Home extends StatelessWidget {
   }
 }
 
-class GenerateCardList extends StatelessWidget{
-  @override
-  Widget build(BuildContext context){
-    print('x');
-  }
+// class GenerateCardList extends StatelessWidget{
+//   @override
+//   Widget build(BuildContext context){
+//     print('x');
+//   }
 
 //   void get_data(){
 //     Firestore.instance.collection('patients').snapshots().listen((data) => data.patients.forEach((patient) => CollectPatients(patient)));
@@ -239,15 +236,67 @@ class GenerateCardList extends StatelessWidget{
 //   }
 // }
 
-// class FireBase{
-//   void get_data(){
-//     Firestore.instance.collection('patients').snapshots().listen((data) => data.documents.forEach((patient) => CollectPatients(patient)));
-//   }
-//   void CollectPatients(DocumentSnapshot pat){
-//     //
-//   }
+
+
+
+
+
+
+
+
+
+
+
+/* PIE CHART
+class PieOutsideLabelChart extends StatelessWidget {
+  final List<Series> seriesList;
+  final bool animate;
+
+  PieOutsideLabelChart(this.seriesList, {this.animate});
+
+  factory PieOutsideLabelChart.withSampleData() {
+    return new PieOutsideLabelChart(
+      _inputData(),
+      animate: false,
+    );
+  }
+
+  @override
+  Widget build (BuildContext ctxt) {
+    return new PieChart(seriesList,
+      animate: animate,
+      defaultRenderer: new ArcRendererConfig(
+        ArcRendererDecorators: [
+          new ArcLabelDecorator(
+            labelPosition: ArcLabelPosition.outside
+          )
+        ]
+      )
+    );
+  }
+
+  static List<Series<something, something>> _inputData() {
+    final data = [
+      //obtain data
+    ];
+    return [
+      new Series<something, something>(
+        id:
+        domainFn: ,
+        measureFn: ,
+        data: data,
+        labelAccessorFn: (something, _) => '${}: ${}',
+      )
+    ];
+  }
 }
-//   void CollectPatients(DocumentSnapshot pat){
-//     print(pat);
-//   }
-// }
+
+//Data Struct
+class PrescriptionChart {
+  final int year;
+  final int sales;
+
+  LinearSales(this.year, this.sales);
+}
+
+*/

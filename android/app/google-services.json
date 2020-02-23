@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "146681344964",
+    "firebase_url": "https://adhere-9df62.firebaseio.com",
+    "project_id": "adhere-9df62",
+    "storage_bucket": "adhere-9df62.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:146681344964:android:1cbc8138ed114f3edc2a91",
+        "android_client_info": {
+          "package_name": "com.adlabz.adhere"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "146681344964-62emfc59178enejvclqr4nllt2264t83.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgr_mFMfcHdgQuXwnfY-K9iBVu5H77TTc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "146681344964-62emfc59178enejvclqr4nllt2264t83.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
