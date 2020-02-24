@@ -1,6 +1,6 @@
 # adhere
 
-Adher: An app for the elderly to monitor their medication
+Adhere: An app for the elderly to monitor their medication
 
 ## Getting Started
 
